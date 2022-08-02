@@ -101,8 +101,9 @@ button,
     color: #f9faf8;
 }
 
-.hero-left button {
-    width: 130px;
+.hero-left button,
+.container button {
+    min-width: 130px;
     height: 35px;
     margin-top: 16px;
 
@@ -111,6 +112,22 @@ button,
 
     border-radius: 8px;
     border-style: none;
+}
+
+.call-to-action-section button {
+    border-style: solid;
+    border-color: white;
+    margin-top: 0;
+}
+
+.call-to-action-section .call-header{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.call-to-action-section .call-message {
+    min-width: 200px;
+    font-size: 18px;
 }
 
 /* flexbox styling */
@@ -168,4 +185,19 @@ button,
 
     align-items: center;
     justify-content: center;
+}
+
+/* call-to-action section */
+.call-to-action-section {
+    margin: 100px 400px;
+}
+
+.call-to-action-section .container {
+    min-width: 500px;
+    padding: 50px 120px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
