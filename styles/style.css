@@ -72,9 +72,51 @@ button,
     color: #f9faf8;
 }
 
+.hero-left button {
+    width: 130px;
+    height: 35px;
+    margin-top: 16px;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    border-radius: 8px;
+    border-style: none;
+}
+
 /* flexbox styling */
 .header {
-    padding: 18px;
+    height: 64px;
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+
+    /* align navigation with hero section */
+    padding: 0 400px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* align hero with navigation section */
+    padding: 120px 400px;
+}
+
+.hero-left {
+    padding: 16px 0;
+    flex: 1;
+}
+
+.hero-right {
+    height: 240px;
+    background-color:#667992;
+    
+    /* center text */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
